@@ -1,11 +1,11 @@
-# Generated with JReleaser 1.16.0 at 2025-05-03T00:08:10.702838Z
+# Generated with JReleaser 1.16.0 at 2025-05-12T16:40:39.514903Z
 
 class Tessellate < Formula
   desc "Tessellate is tool for parsing and partitioning data."
   homepage "https://github.com/ClusterlessHQ"
-  url "https://github.com/ClusterlessHQ/tessellate/releases/download/v1.0-wip-80/tessellate-1.0-wip-80.zip"
-  version "1.0-wip-80"
-  sha256 "46d893cd54b789c8c44ece7d8152b2f6b096ab5396d2ecdf3a757cdc2b7f4f10"
+  url "https://github.com/ClusterlessHQ/tessellate/releases/download/v1.0-wip-81/tessellate-1.0-wip-81.zip"
+  version "1.0-wip-81"
+  sha256 "f4f65e91f630b97895e2d22792d45750fb97a98737c62f4ff4f73571b2a8c9c8"
   license "MPL-2.0"
 
   depends_on "openjdk@11"
@@ -17,6 +17,6 @@ class Tessellate < Formula
 
   test do
     output = shell_output("#{bin}/tess --version")
-    assert_match "1.0-wip-80", output
+    assert_match "1.0-wip-81", output
   end
 end
