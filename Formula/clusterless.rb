@@ -1,10 +1,10 @@
-# Generated with JReleaser 1.8.0 at 2025-05-09T16:29:19.200189197Z
+# Generated with JReleaser 1.8.0 at 2025-05-16T17:23:05.321071422Z
 class Clusterless < Formula
   desc "Clusterless is a framework for building serverless data oriented applications."
   homepage "https://github.com/ClusterlessHQ"
-  url "https://github.com/ClusterlessHQ/clusterless/releases/download/v1.0-wip-109/clusterless-1.0-wip-109.zip"
-  version "1.0-wip-109"
-  sha256 "09fe55fd193df8997637d206ff44e35f90d06a4e1a61efdc7cbb91619cc25539"
+  url "https://github.com/ClusterlessHQ/clusterless/releases/download/v1.0-wip-110/clusterless-1.0-wip-110.zip"
+  version "1.0-wip-110"
+  sha256 "7a80a30a3f6dba36e48f6b59a0aa64735dd7853c143fa5f8336ef6010008346e"
   license "MPL-2.0"
 
   depends_on "openjdk@17"
@@ -16,6 +16,6 @@ class Clusterless < Formula
 
   test do
     output = shell_output("#{bin}/cls --version")
-    assert_match "1.0-wip-109", output
+    assert_match "1.0-wip-110", output
   end
 end
